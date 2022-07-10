@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Web.UI;
 using WebApplication1.Model;
+using WebApplication1.Service;
 
 namespace WebApplication1
 {
@@ -82,6 +83,13 @@ namespace WebApplication1
             };
             Cards.Add(card);
             CreateCardTemplates();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            var ws = new ExeclService();
+            ws.SetExcel(@"C:\Users\h1520\source\repos\WebFormTest\WebApplication1\Test.xlsx");
+
         }
     }
 }

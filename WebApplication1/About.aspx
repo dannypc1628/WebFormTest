@@ -8,4 +8,6 @@
     <asp:TextBox ID="ContentTextBox" runat="server"></asp:TextBox>
     <asp:Button ID="InsertButton" runat="server" Text="Button" OnClick="InsertButton_Click" />
     <asp:Panel ID="Panel1" runat="server"></asp:Panel>
+
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 </asp:Content>
